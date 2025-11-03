@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagefilm & Social Media - Vadim Gerasimov</title>
+    <meta name="description" content="Professionelle Imagefilme und Social Media Content für Ihr Unternehmen. Authentische Videos, die Ihre Marke zum Leben erwecken.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">Vadim Gerasimov</a>
+        <button class="mobile-menu-toggle" onclick="toggleMenu()" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="hochzeiten.html">Hochzeiten</a></li>
+            <li><a href="imagefilm.html" class="active">Imagefilm / Social Media</a></li>
+            <li><a href="immobilien.html">Immobilien</a></li>
+            <li><a href="room-tours.html">Roomtours</a></li>
+            <li><a href="index.html#kontakt">Kontakt</a></li>
+        </ul>
+        <div class="social-links">
+            <a href="https://instagram.com/vadimgerasimov" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@vadimgerasimov" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+    </nav>
+
+    <section class="portfolio-page">
+        <div class="page-header">
+            <h1 class="page-title">Imagefilm / Social Media</h1>
+            <p class="page-subtitle">Authentische Imagefilme und kreative Social-Media-Clips, die Ihre Marke zum Leben erwecken. Von Unternehmensportraits bis zu viralen Social-Media-Kampagnen.</p>
+            <div class="page-divider"></div>
+        </div>
+
+        <div class="masonry-grid">
+            <div class="gallery-item" onclick="openLightbox(0)">
+                <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800" alt="Imagefilm 1" loading="lazy">
+                <div class="gallery-overlay"><div class="gallery-title">Unternehmensportrait</div></div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(1)">
+                <img src="https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=800&h=1200" alt="Imagefilm 2" loading="lazy">
+                <div class="gallery-overlay"><div class="gallery-title">Social Media Content</div></div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(2)">
+                <img src="https://images.unsplash.com/photo-1590650153855-d9e808231d41?w=800" alt="Imagefilm 3" loading="lazy">
+                <div class="gallery-overlay"><div class="gallery-title">Produktvideo</div></div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(3)">
+                <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&h=600" alt="Imagefilm 4" loading="lazy">
+                <div class="gallery-overlay"><div class="gallery-title">Corporate Video</div></div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(4)">
+                <img src="https://images.unsplash.com/photo-1598550476439-6847785fcea6?w=800" alt="Imagefilm 5" loading="lazy">
+                <div class="gallery-overlay"><div class="gallery-title">Instagram Reels</div></div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(5)">
+                <img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=800&h=1200" alt="Imagefilm 6" loading="lazy">
+                <div class="gallery-overlay"><div class="gallery-title">TikTok Content</div></div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(6)">
+                <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?w=800" alt="Imagefilm 7" loading="lazy">
+                <div class="gallery-overlay"><div class="gallery-title">Behind the Scenes</div></div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(7)">
+                <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800&h=600" alt="Imagefilm 8" loading="lazy">
+                <div class="gallery-overlay"><div class="gallery-title">Werbevideo</div></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Vadim Gerasimov. Alle Rechte vorbehalten.</p>
+        <p style="margin-top: 12px; opacity: 0.7;">Hochzeiten | Imagefilme | Immobilien | Roomtours</p>
+        <p style="margin-top: 12px; opacity: 0.7;"><a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()">×</button>
+        <button class="lightbox-nav lightbox-prev" onclick="changeLightboxImage(-1)">‹</button>
+        <div class="lightbox-content"><img id="lightbox-img" src="" alt=""></div>
+        <button class="lightbox-nav lightbox-next" onclick="changeLightboxImage(1)">›</button>
+    </div>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script>
+        const images = [
+            'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=1600',
+            'https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=1600',
+            'https://images.unsplash.com/photo-1590650153855-d9e808231d41?w=1600',
+            'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=1600',
+            'https://images.unsplash.com/photo-1598550476439-6847785fcea6?w=1600',
+            'https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=1600',
+            'https://images.unsplash.com/photo-1536240478700-b869070f9279?w=1600',
+            'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=1600'
+        ];
+        Lightbox.init(images);
+    </script>
+</body>
+</html>

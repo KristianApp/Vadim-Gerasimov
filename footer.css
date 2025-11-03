@@ -1,0 +1,35 @@
+/**
+ * Footer Styles
+ * Footer mit Copyright, Links und zusätzlichen Infos
+ */
+
+footer {
+    background: var(--primary-color);
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding: var(--spacing-xl) 30px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer p {
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+footer p + p {
+    margin-top: 12px;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color var(--transition-normal);
+    border-bottom: 1px solid transparent;
+}
+
+footer a:hover {
+    color: white;
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+}

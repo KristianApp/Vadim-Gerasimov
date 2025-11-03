@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Vadim Gerasimov</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">Vadim Gerasimov</a>
+        <button class="mobile-menu-toggle" onclick="toggleMenu()" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html#about">Über mich</a></li>
+            <li><a href="hochzeiten.html">Hochzeiten</a></li>
+            <li><a href="events.html" class="active">Events</a></li>
+            <li><a href="room-tours.html">Room Tours</a></li>
+            <li><a href="index.html#kontakt">Kontakt</a></li>
+        </ul>
+        <div class="social-links">
+            <a href="https://instagram.com/vadimgerasimov" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/vadimgerasimov" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+    </nav>
+
+    <section class="portfolio-page">
+        <div class="page-header">
+            <h1 class="page-title">Events</h1>
+            <p class="page-subtitle">Von Firmenevents über Gala-Abende bis hin zu privaten Feiern – ich dokumentiere die Atmosphäre und besonderen Momente Ihrer Veranstaltung mit professionellem Auge.</p>
+            <div class="page-divider"></div>
+        </div>
+
+        <div class="masonry-grid">
+            <div class="gallery-item" onclick="openLightbox(0)">
+                <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800" alt="Event 1" loading="lazy">
+                <div class="gallery-overlay"><div class="gallery-title">Firmenevents</div></div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(1)">
+                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800" alt="Event 2" loading="lazy">
+                <div class="gallery-overlay"><div class="gallery-title">Besondere Anlässe</div></div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(2)">
+                <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&h=1200" alt="Event 3" loading="lazy">
+                <div class="gallery-overlay"><div class="gallery-title">Gala Veranstaltungen</div></div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(3)">
+                <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&h=600" alt="Event 4" loading="lazy">
+                <div class="gallery-overlay"><div class="gallery-title">Konferenzen</div></div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(4)">
+                <img src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=800" alt="Event 5" loading="lazy">
+                <div class="gallery-overlay"><div class="gallery-title">Produktlaunches</div></div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(5)">
+                <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=800&h=1200" alt="Event 6" loading="lazy">
+                <div class="gallery-overlay"><div class="gallery-title">Festliche Events</div></div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(6)">
+                <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800" alt="Event 7" loading="lazy">
+                <div class="gallery-overlay"><div class="gallery-title">Networking Events</div></div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(7)">
+                <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=800&h=600" alt="Event 8" loading="lazy">
+                <div class="gallery-overlay"><div class="gallery-title">Charity Events</div></div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(8)">
+                <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800" alt="Event 9" loading="lazy">
+                <div class="gallery-overlay"><div class="gallery-title">Preisverleihungen</div></div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(9)">
+                <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?w=800&h=1200" alt="Event 10" loading="lazy">
+                <div class="gallery-overlay"><div class="gallery-title">Corporate Events</div></div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(10)">
+                <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&h=600" alt="Event 11" loading="lazy">
+                <div class="gallery-overlay"><div class="gallery-title">Workshops</div></div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(11)">
+                <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800" alt="Event 12" loading="lazy">
+                <div class="gallery-overlay"><div class="gallery-title">Festliche Dinner</div></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Vadim Gerasimov. Alle Rechte vorbehalten.</p>
+        <p style="margin-top: 12px; opacity: 0.7;">Fotografie | Interior Design | 360° Erlebnisse</p>
+        <p style="margin-top: 12px; opacity: 0.7;"><a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()">×</button>
+        <button class="lightbox-nav lightbox-prev" onclick="changeLightboxImage(-1)">‹</button>
+        <div class="lightbox-content"><img id="lightbox-img" src="" alt=""></div>
+        <button class="lightbox-nav lightbox-next" onclick="changeLightboxImage(1)">›</button>
+    </div>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script>
+        const images = [
+            'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1600',
+            'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1600',
+            'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=1600',
+            'https://images.unsplash.com/photo-1511578314322-379afb476865?w=1600',
+            'https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=1600',
+            'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=1600',
+            'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1600',
+            'https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=1600',
+            'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=1600',
+            'https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1600',
+            'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1600',
+            'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1600'
+        ];
+        Lightbox.init(images);
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+# robots.txt für vadimgerasimov.de
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://vadimgerasimov.de/sitemap.xml
+
+# Seiten die nicht indexiert werden sollen
+Disallow: /css/
+Disallow: /js/
+Disallow: /videos/
+
+# Erlaubte Seiten explizit angeben (optional)
+Allow: /*.html$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.webp$
